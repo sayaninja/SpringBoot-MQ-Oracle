@@ -1,0 +1,21 @@
+create or replace PROCEDURE GET_NAME_FROM_ID
+(
+  IN_ID IN NUMBER, OUT_NAME OUT VARCHAR2
+) AS
+BEGIN
+  SELECT NAME INTO OUT_NAME FROM CUSTOMER WHERE ID = IN_ID;
+END GET_NAME_FROM_ID;
+
+
+create or replace PROCEDURE THROW_EX_PROCEDURE
+(
+  IN_ID IN NUMBER, OUT_NAME OUT VARCHAR2
+)
+IS
+   exception_name EXCEPTION;
+BEGIN
+   RAISE exception_name;
+EXCEPTION
+   WHEN exception_name THEN
+      raise_application_error (-20001,'Sample exception was thrown');
+END THROW_EX_PROCEDURE;

@@ -1,0 +1,21 @@
+servers:
+  mq:
+    host: 127.0.0.1
+    port: 1425
+    queue-manager: TestNodeQM
+    channel: ONE.SVR.CONN
+    request-queue: ONE.QUEUE
+    reply-queue: ONE.QUEUE
+    topic: ONE/TOPIC
+    timeout: 2000
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: test
+    password: test
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
