@@ -1,4 +1,4 @@
-package com.customer.customer;
+package com.customer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

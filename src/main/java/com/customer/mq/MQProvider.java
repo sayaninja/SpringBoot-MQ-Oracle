@@ -28,8 +28,6 @@ public class MQProvider {
     private String requestQueueName;
     @Value("${servers.mq.reply-queue}")
     private String replyQueueName;
-    @Value("${servers.mq.timeout}")
-    private long timeout;
 
     private MQQueueManager queueManager;
     private MQQueue queue;

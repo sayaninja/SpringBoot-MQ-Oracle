@@ -6,8 +6,6 @@ servers:
     channel: ONE.SVR.CONN
     request-queue: ONE.QUEUE
     reply-queue: ONE.QUEUE
-    topic: ONE/TOPIC
-    timeout: 2000
 
 spring:
   datasource:
